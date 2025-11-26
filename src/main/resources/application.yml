@@ -1,0 +1,18 @@
+spring:
+  ai:
+    openai:
+      api-key: ${CHATGPT_API_KEY}
+      base-url: ${CHATGPT_BASE_URL}
+      project-id: ${FOLDER_ID}
+      organization-id: ${FOLDER_ID}
+      model: ${MODEL}
+    type: simple
+
+telegram:
+  token: ${TELEGRAM_BOT_TOKEN}
+  botName: ${TELEGRAM_BOT_NAME}
+
+logging:
+  level:
+    org.springframework.ai: DEBUG
+
