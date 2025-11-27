@@ -5,7 +5,7 @@ COPY . /app
 RUN gradle build --no-daemon
 
 # Package stage
-FROM openjdk:21-jdk-slim
+FROM openjdk:21-ea-23-jdk-bullseye
 WORKDIR /app
 COPY --from=build /app/build/libs /app
 EXPOSE 8080
